@@ -1,8 +1,10 @@
-car = {
-   "brand": "Tesla",
-   "model": "Model S",
-   "year": 2023
+person = {
+   "name": "Sita",
+   "marks": {
+       "math": 90,
+       "science": 85
+   }
 }
 
-print(car["brand"])
-print(car["year"])
+print(person["marks"]["science"])
+print(person["marks"]["math"])
