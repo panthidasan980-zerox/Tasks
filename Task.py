@@ -1,17 +1,17 @@
-result = [
-   {
-       "emotion": {
-           "happy": 82.09,
-           "sad": 3.16,
-           "angry": 1.41
-       },
-       "dominant_emotion": "happy",
-       "confidence": 0.98
+data = {
+   "user": {
+       "name": "Dipson",
+       "skills": {
+           "programming": ["Python", "Go", "Dart"],
+           "ai": {
+               "llm": True,
+               "computer_vision": False
+           }
+       }
    }
-]
+}
 
-data = result[0]
-
-print(data["dominant_emotion"])
-print(data["emotion"]["happy"])
-print(data["confidence"])
+print(data["user"]["name"])
+print(data["user"]["skills"]["programming"][1])
+print(data["user"]["skills"]["ai"]["llm"])
+print(data["user"]["skills"]["ai"]["computer_vision"])
